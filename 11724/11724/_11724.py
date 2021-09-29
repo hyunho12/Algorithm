@@ -7,3 +7,4 @@ def cal(n):
 n = int(input())
 print(cal(n))
 print("git Test")
+print("git New Branch!")
