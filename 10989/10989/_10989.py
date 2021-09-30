@@ -1,15 +1,11 @@
 n = int(input())
-arr = [0] * n
-temp = []
-for i in range(n):
-    arr[i] = int(input())
-    
-for i in range(n):
-    for j in range(i+1,n):
-        if arr[j] < arr[i]:
-            temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
+check = [0] * 10001
 
-for k in range(n):
-    print(arr[k])
+for _ in range(n):
+    num = int(input())
+    check[num] += 1
+
+for i in range(10001):
+    if check[i] != 0:
+        for _ in range(check[i]):
+            print(i)
