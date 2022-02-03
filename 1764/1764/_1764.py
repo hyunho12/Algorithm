@@ -11,7 +11,8 @@ for _ in range(m):
 
 ans = sorted(list(set(a) & set(b)))
 
-for i in ans:
-    print(i)
 
 print(len(ans))
+
+for i in ans:
+    print(i)
