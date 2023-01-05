@@ -9,7 +9,7 @@ public class Test1012 {
 	static boolean [][] visited;
 	static int [] dr = {-1,1,0,0};
 	static int [] dc = {0,0,-1,1};
-	
+		
 	public static void dfs(int a, int b) {
 		visited[a][b] = true;
 		
@@ -56,5 +56,4 @@ public class Test1012 {
 			System.out.println(ans);
 		}		
 	}
-
 }
